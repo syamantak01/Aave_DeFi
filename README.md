@@ -1,8 +1,14 @@
-1. swap ETH for WETH
-2. Deposit some ETH(in our case, WETH) into Aave
-3. Borrow some asset with ETH collateral
-   1. Sell that borrowed asset (short selling)
-4. Repay everything back.
+# DeFi Application
+
+This is a DeFi Application built with Aave, Chainlink and Brownie.
+
+## Overall steps
+
+   1. swap ETH for WETH
+   2. Deposit some ETH(in our case, WETH) into Aave
+   3. Borrow some asset with ETH collateral
+      1. Sell that borrowed asset (short selling)
+   4. Repay everything back.
 
 First, we need some WETH and to get WETH we can interact with the [WETH token contract](https://kovan.etherscan.io/token/0xd0a1e359811322d97991e03f863a0c30c2cf029c#writeContract)
 
@@ -33,5 +39,3 @@ Now after borrowing, we will work on repaying that back:
 
 - First thing to do is to call the approve function and we are going to prove that we are going to pay back
 - then use repay() method to reopay the amount borrowed
-
-
